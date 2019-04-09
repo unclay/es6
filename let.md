@@ -85,24 +85,35 @@ for (var i = 0; i < 10; i += 1) {
 }
 ```
 
+
+## const 命令
+
+### 基本用法
++ 定义变量
+```javascript
+const a = 1;
+a = 2;
+```
+
+```javascript
+function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
+
+var a = 1;
+a = (_readOnlyError("a"), 2);
+```
+
 ## 其他场景
 
 + 函数内定义默认参数值
 
 ```javascript
 function fn(arg = 1) {
-  {
-    let arg = 2;
-  }
 }
 ```
 
 ```javascript
 function fn() {
   var arg = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  {
-    var _arg = 2;
-  }
 }
 ```
 
