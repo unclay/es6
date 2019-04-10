@@ -1,6 +1,6 @@
 # 变量的解构赋值
 
-## 数组解构赋值
+## 数组的解构赋值
 
 + 常规数组
 
@@ -66,4 +66,24 @@ var a = 1,
     d = 4;
 ```
 
++ 指定默认值
 
+```javascript
+let [a = true] = [];
+```
+
+```javascript
+var _ref = [],
+    _ref$ = _ref[0],
+    a = _ref$ === void 0 ? true : _ref$;
+```
+
+`void 0` 可以参考我以前写过的一篇文章 [探究 undefined 与 void](https://www.unclay.com/2018/09/05/undefined-void/)
+
+## 对象的解构赋值
+
++ 常规对象
+
+```javascript
+let { a, c } = { a: 1, b: 2, c: 3 };
+```
