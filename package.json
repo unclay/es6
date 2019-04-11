@@ -1,0 +1,19 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "现在写 `ES6` 的人越来越多，但是你知道 `ES6` 是怎么转换成 `ES5` 的吗   估计很多人都是不知道",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclay/es6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unclay/es6/issues"
+  },
+  "homepage": "https://github.com/unclay/es6#readme"
+}
