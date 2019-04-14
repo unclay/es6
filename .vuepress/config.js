@@ -10,7 +10,10 @@ module.exports = {
     sidebar: [
       '/',
       '/let',
-      '/destructuring'
+      '/destructuring',
+      // '/string',
+      '/object-methods',
+      '/class',
     ]
   }
 }
