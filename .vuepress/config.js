@@ -14,6 +14,7 @@ module.exports = {
       // '/string',
       '/object-methods',
       '/class',
+      '/class-extends',
     ]
   }
 }

@@ -33,6 +33,14 @@
 /*#__PURE__*/
 ```
 
+## 目录
+
++ [let 和 const 命令](./let.md)
++ [变量的解构赋值](./destructuring.md)
++ [对象的新增方法](./object-methods.md)
++ [Class 的基本语法](./class.md)
++ [Class 的继承](./class-extends.md)
+
 ## 参考文献
 
 + [ECMAScript 6 入门](http://es6.ruanyifeng.com)
