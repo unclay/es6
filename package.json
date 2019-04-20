@@ -4,7 +4,11 @@
   "description": "现在写 `ES6` 的人越来越多，但是你知道 `ES6` 是怎么转换成 `ES5` 的吗   估计很多人都是不知道",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev ."
+    "dev": "vuepress dev .",
+    "build": "babel src --out-dir dist/normal --config-file ./mode-normal.babelrc",
+    "wbuild": "babel src --out-dir dist/normal --watch --config-file ./mode-normal.babelrc",
+    "build:loose": "babel src --out-dir dist/loose --config-file ./mode-loose.babelrc",
+    "wbuild:loose": "babel src --out-dir dist/loose --config-file ./mode-loose.babelrc --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/unclay/es6/issues"
   },
-  "homepage": "https://github.com/unclay/es6#readme"
+  "homepage": "https://github.com/unclay/es6#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "core-js": "^3.0.1"
+  }
 }

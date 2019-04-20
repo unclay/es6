@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'ES6',
+  title: 'ES6 & Babel',
   description: 'Just playing around',
   themeConfig: {
     nav: [
